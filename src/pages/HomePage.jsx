@@ -2,10 +2,14 @@ import heroImage from "../assets/images/heroImage.png";
 import playImage from "../assets/images/polygon.svg";
 import decoreImage from "../assets/images/decore.svg";
 import decoreImage2 from "../assets/images/decore_2.svg";
+import decoreImage3 from "../assets/images/decore_3.svg";
 import planeImage from "../assets/images/plane.svg";
 import micImage from "../assets/images/mic.svg";
 import satellitedishImage from "../assets/images/satellite-dish.svg";
 import settingImage from "../assets/images/setting.svg";
+import destinationImage1 from "../assets/images/destination_1.svg";
+import destinationImage2 from "../assets/images/destination_2.svg";
+import destinationImage3 from "../assets/images/destination_3.svg";
 
 import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
@@ -64,7 +68,7 @@ function HomePage() {
       </header>
 
       <section className="w-full py-10">
-        <div className="relative space-y-2 py-5 py-8 text-center">
+        <div className="relative space-y-2 py-8 text-center">
           <img src={decoreImage2} className="absolute top-0 right-0" alt="" />
           <h3 className="text-xl text-gray-600">Category</h3>
           <h2 className="text-6xl font-bold">We Offer Best Services</h2>
@@ -117,6 +121,65 @@ function HomePage() {
               </p>
             </div>
           </ServiceCard>
+        </div>
+      </section>
+
+      <section className="w-full bg-white py-10">
+        <div className="relative space-y-2 py-8 text-center">
+          <h3 className="text-xl text-gray-600">Top Selling</h3>
+          <h2 className="text-6xl font-bold">Top Destination</h2>
+        </div>
+        <div className="relative z-10 mt-25 flex max-w-[1110px] justify-between">
+          <img
+            className="absolute -right-15 bottom-10 -z-10"
+            src={decoreImage3}
+            alt=""
+          />
+          <div className="h-[470px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
+            <div>
+              <img
+                src={destinationImage1}
+                className="h-[340px] w-full object-cover object-top"
+              />
+            </div>
+            <div className="space-y-3 p-6">
+              <div className="flex justify-between text-lg text-gray-500">
+                <span>Rome, Italty</span>
+                <span>$5,42k</span>
+              </div>
+              <p className="text-lg text-gray-500">10 Days Trip</p>
+            </div>
+          </div>
+          <div className="h-[470px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
+            <div>
+              <img
+                src={destinationImage2}
+                className="h-[340px] w-full object-cover object-top"
+              />
+            </div>
+            <div className="space-y-3 p-6">
+              <div className="flex justify-between text-lg text-gray-500">
+                <span>Rome, Italty</span>
+                <span>$5,42k</span>
+              </div>
+              <p className="text-lg text-gray-500">10 Days Trip</p>
+            </div>
+          </div>
+          <div className="h-[470px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
+            <div>
+              <img
+                src={destinationImage3}
+                className="h-[340px] w-full object-cover object-top"
+              />
+            </div>
+            <div className="space-y-3 p-6">
+              <div className="flex justify-between text-lg text-gray-500">
+                <span>Rome, Italty</span>
+                <span>$5,42k</span>
+              </div>
+              <p className="text-lg text-gray-500">10 Days Trip</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
