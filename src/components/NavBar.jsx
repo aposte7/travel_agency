@@ -1,11 +1,17 @@
+import { Menu } from "lucide-react";
 import NavBarLink from "./NavBarLink";
 
 function NavBar() {
   return (
     <nav className="flex w-full items-center justify-between py-7">
-      <div className="text-5xl font-semibold">Jadoo</div>
+      <div className="text-3xl font-semibold md:text-4xl lg:text-5xl">
+        Jadoo
+      </div>
 
-      <div className="flex w-[70%] items-center justify-between">
+      <div className="block md:hidden">
+        <Menu />
+      </div>
+      <div className="hidden w-[75%] items-center justify-between gap-4 md:flex">
         <NavBarLink>Destination</NavBarLink>
         <NavBarLink>Hotels</NavBarLink>
         <NavBarLink>Flights</NavBarLink>
