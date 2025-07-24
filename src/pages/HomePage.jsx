@@ -10,6 +10,7 @@ import settingImage from "../assets/images/setting.svg";
 import destinationImage1 from "../assets/images/destination_1.svg";
 import destinationImage2 from "../assets/images/destination_2.svg";
 import destinationImage3 from "../assets/images/destination_3.svg";
+import navigationImage from "../assets/images/navigation_icon.svg";
 
 import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
@@ -147,7 +148,10 @@ function HomePage() {
                 <span>Rome, Italty</span>
                 <span>$5,42k</span>
               </div>
-              <p className="text-lg text-gray-500">10 Days Trip</p>
+              <div className="flex items-center gap-4 text-lg text-gray-500">
+                <img src={navigationImage} alt="" />
+                <span>10 Days Trip</span>
+              </div>
             </div>
           </div>
           <div className="h-[470px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
@@ -159,10 +163,13 @@ function HomePage() {
             </div>
             <div className="space-y-3 p-6">
               <div className="flex justify-between text-lg text-gray-500">
-                <span>Rome, Italty</span>
-                <span>$5,42k</span>
+                <span>London, UK</span>
+                <span>$4.2k</span>
               </div>
-              <p className="text-lg text-gray-500">10 Days Trip</p>
+              <div className="flex items-center gap-4 text-lg text-gray-500">
+                <img src={navigationImage} alt="" />
+                <span>12 Days Trip</span>
+              </div>
             </div>
           </div>
           <div className="h-[470px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
@@ -174,13 +181,22 @@ function HomePage() {
             </div>
             <div className="space-y-3 p-6">
               <div className="flex justify-between text-lg text-gray-500">
-                <span>Rome, Italty</span>
-                <span>$5,42k</span>
+                <span>Full Europe</span>
+                <span>$155k</span>
               </div>
-              <p className="text-lg text-gray-500">10 Days Trip</p>
+              <div className="flex items-center gap-4 text-lg text-gray-500">
+                <img src={navigationImage} alt="" />
+                <span>28 Days Trip</span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="w-full bg-white py-10">
+        <h3 className="text-xl text-gray-600">Easy and Fast</h3>
+
+        <div className="flex"></div>
       </section>
     </div>
   );
