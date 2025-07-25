@@ -11,15 +11,24 @@ import destinationImage1 from "../assets/images/destination_1.svg";
 import destinationImage2 from "../assets/images/destination_2.svg";
 import destinationImage3 from "../assets/images/destination_3.svg";
 import navigationImage from "../assets/images/navigation_icon.svg";
+import chooseImage from "../assets/images/choose.svg";
+import airportImage from "../assets/images/airport.svg";
+import paymentImage from "../assets/images/payment.svg";
+import greeceImage from "../assets/images/greece.jpg";
 
 import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
+import { Building2, ChartBar, Heart, Leaf, Send } from "lucide-react";
 function HomePage() {
   return (
     <div className="relative h-dvh w-full pr-8 pl-12 xl:pr-14 xl:pl-28">
-      {/* <div className="absolute top-0 right-0 -z-10">
-        <img src={decoreImage} className="w-[766px] object-cover" alt="" />
-      </div> */}
+      <div className="absolute top-0 right-0 -z-10">
+        <img
+          src={decoreImage}
+          className="w-[300px] object-cover sm:w-[500px] lg:w-[656px] xl:w-[766px]"
+          alt=""
+        />
+      </div>
 
       <header className="mx-auto max-w-[1200px]">
         <NavBar />
@@ -193,10 +202,94 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="w-full bg-white py-10">
+      <section className="w-full space-y-5 bg-white py-25">
         <h3 className="text-xl text-gray-600">Easy and Fast</h3>
 
-        <div className="flex"></div>
+        <div className="flex max-w-[1114px] items-center justify-between">
+          <div className="w-[30rem] space-y-8">
+            <h2 className="text-5xl leading-14 font-bold">
+              Book your next trip in 3 easy steps
+            </h2>
+
+            <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] items-center gap-x-6">
+              <img
+                src={chooseImage}
+                className="row-span-2 h-16 w-16 object-cover"
+                alt=""
+              />
+              <h3 className="text-lg font-medium text-slate-500">
+                Choose Destination
+              </h3>
+              <p className="font-light text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.{" "}
+              </p>
+            </div>
+            <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] items-center gap-x-4">
+              <img
+                src={airportImage}
+                className="row-span-2 h-16 w-16 object-cover"
+                alt=""
+              />
+              <h3 className="text-lg font-medium text-slate-500">
+                Reach Airport on Selected Date{" "}
+              </h3>
+              <p className="font-light text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.{" "}
+              </p>
+            </div>
+            <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] items-center gap-x-4">
+              <img
+                src={paymentImage}
+                className="row-span-2 h-16 w-16 object-cover"
+                alt=""
+              />
+              <h3 className="text-lg font-medium text-slate-500">
+                Make Payment
+              </h3>
+              <p className="font-light text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[26rem] rounded-3xl bg-white p-6 shadow-xl">
+            <img
+              src={greeceImage}
+              className="h-48 w-full rounded-2xl object-cover"
+              alt=""
+            />
+
+            <div className="mt-6 space-y-4">
+              <h3 className="text-xl font-bold">Trip To Greece</h3>
+              <p className="text-lg font-semibold text-slate-500">
+                14-29 June | by Robbin joseph
+              </p>
+
+              <div className="flex gap-5">
+                <button className="rounded-full bg-slate-200/60 p-3">
+                  <Leaf className="text-slate-600" />
+                </button>
+                <button className="rounded-full bg-slate-200/60 p-3">
+                  <ChartBar className="text-slate-600" />
+                </button>
+                <button className="rounded-full bg-slate-200/60 p-3">
+                  <Send className="text-slate-600" />
+                </button>
+              </div>
+
+              <div className="flex items-center justify-between py-2">
+                <p className="flex items-center gap-4 text-xl text-slate-500">
+                  <Building2 />
+                  <span>24 people going</span>
+                </p>
+                <Heart className="text-blue-600" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
