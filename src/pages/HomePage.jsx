@@ -18,7 +18,15 @@ import greeceImage from "../assets/images/greece.jpg";
 
 import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
-import { Building2, ChartBar, Heart, Leaf, Send } from "lucide-react";
+import {
+  Building2,
+  ChartBar,
+  ChevronDown,
+  ChevronUp,
+  Heart,
+  Leaf,
+  Send,
+} from "lucide-react";
 function HomePage() {
   return (
     <div className="relative h-dvh w-full pr-8 pl-12 xl:pr-14 xl:pl-28">
@@ -292,6 +300,60 @@ function HomePage() {
                 <Heart className="text-blue-600" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full space-y-5 bg-white py-25">
+        <div className="flex h-fit items-start justify-between">
+          <div className="w-[455px] space-y-8">
+            <h3 className="text-xl text-gray-600">Testimonials</h3>
+
+            <h2 className="text-6xl leading-14 font-bold">
+              What people say about Us.
+            </h2>
+          </div>
+
+          <div className="relative h-[365px]">
+            <div className="relative z-50 w-[550px]">
+              <img
+                src=""
+                className="h-[68px] w-[68px] rounded-full bg-black"
+                alt=""
+              />
+              <div className="ml-[34px] rounded-md bg-white p-6 shadow-lg">
+                <p className="w-[400px] text-slate-400">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <h4 className="mt-4 text-lg text-slate-700">Mike taylor</h4>
+                <p className="text-slate-400">Lahore, Pakistan</p>
+              </div>
+            </div>
+            <div className="-relative z-50 w-[550px] translate-x-15 -translate-y-45">
+              <img
+                src=""
+                className="h-[68px] w-[68px] rounded-full bg-black"
+                alt=""
+              />
+              <div className="ml-[34px] rounded-md border border-slate-100 bg-white p-6">
+                <p className="w-[400px] text-slate-400">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <h4 className="mt-4 text-lg text-slate-700">Mike taylor</h4>
+                <p className="text-slate-400">Lahore, Pakistan</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex h-[300px] flex-col justify-center gap-6">
+            <button className="w-fit bg-slate-50 p-2">
+              <ChevronUp />
+            </button>
+            <button className="w-fit bg-slate-50 p-2 text-slate-400">
+              <ChevronDown />
+            </button>
           </div>
         </div>
       </section>
