@@ -3,6 +3,7 @@ import playImage from "../assets/images/polygon.svg";
 import decoreImage from "../assets/images/decore.svg";
 import decoreImage2 from "../assets/images/decore_2.svg";
 import decoreImage3 from "../assets/images/decore_3.svg";
+import decoreImage4 from "../assets/images/decore_4.svg";
 import planeImage from "../assets/images/plane.svg";
 import micImage from "../assets/images/mic.svg";
 import satellitedishImage from "../assets/images/satellite-dish.svg";
@@ -15,10 +16,16 @@ import chooseImage from "../assets/images/choose.svg";
 import airportImage from "../assets/images/airport.svg";
 import paymentImage from "../assets/images/payment.svg";
 import greeceImage from "../assets/images/greece.jpg";
+import compImage1 from "../assets/images/comp1.svg";
+import compImage2 from "../assets/images/comp2.svg";
+import compImage3 from "../assets/images/comp3.svg";
+import compImage4 from "../assets/images/comp4.svg";
+import compImage5 from "../assets/images/comp5.svg";
 
 import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
 import {
+  ArrowLeft,
   Building2,
   ChartBar,
   ChevronDown,
@@ -355,6 +362,78 @@ function HomePage() {
               <ChevronDown />
             </button>
           </div>
+        </div>
+      </section>
+      <section className="w-full space-y-5 bg-white py-25">
+        <div className="flex flex-wrap justify-evenly">
+          <div className="flex h-16 items-center bg-slate-50 px-6 py-2">
+            <img src={compImage1} alt="" />
+          </div>
+          <div className="flex h-16 items-center bg-slate-50 px-6 py-2">
+            <img src={compImage2} alt="" />
+          </div>
+          <div className="flex h-16 items-center bg-slate-50 px-6 py-2">
+            <img src={compImage3} alt="" />
+          </div>
+          <div className="flex h-16 items-center bg-slate-50 px-6 py-2">
+            <img src={compImage4} alt="" />
+          </div>
+          <div className="flex h-16 items-center bg-slate-50 px-6 py-2">
+            <img src={compImage5} alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="w-full space-y-5 bg-white py-25">
+        <div className="relative z-10 mx-auto h-fit max-w-4xl">
+          <div className="relative mx-auto rounded-tl-[100px] bg-[#f4f2ff] p-16 text-center shadow-md">
+            <img
+              src={decoreImage4}
+              alt=""
+              className="absolute top-5 -right-5 w-40 -rotate-90 object-cover"
+            />
+            <img
+              src={decoreImage4}
+              alt=""
+              className="absolute -bottom-0 left-0 w-60 object-cover"
+            />
+
+            <div className="absolute -top-4 -right-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500">
+              <Send size={25} className="text-white" fill="white" />
+            </div>
+
+            <div className="absolute top-[-50px] left-[-50px] h-64 w-64 rounded-full border-[1px] border-purple-100 opacity-30"></div>
+            <div className="absolute right-[-50px] bottom-[-50px] h-64 w-64 rounded-full border-[1px] border-purple-100 opacity-30"></div>
+
+            <h2 className="mb-16 text-2xl font-semibold text-slate-500">
+              Subscribe to get information, latest news and other <br />
+              interesting offers about{" "}
+              <span className="font-bold text-[#6244C5]">Jadoo</span>
+            </h2>
+
+            <form className="mx-auto flex w-full max-w-md flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
+              <div className="relative w-full rounded-md bg-white">
+                <span className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400">
+                  <ArrowLeft size={18} />
+                </span>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="w-full rounded-md border border-gray-200 py-3 pr-4 pl-10 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-[#6244C5]"
+                />
+              </div>
+              <button
+                type="submit"
+                className="rounded-md bg-orange-400/60 px-6 py-2.5 text-white shadow-md transition hover:brightness-110"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <img
+            src={decoreImage2}
+            alt=""
+            className="absolute -right-24 -bottom-15 -z-30 rotate-90"
+          />
         </div>
       </section>
     </div>
