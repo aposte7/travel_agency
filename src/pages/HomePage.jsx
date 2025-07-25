@@ -34,11 +34,11 @@ function HomePage() {
         <NavBar />
 
         <div className="flex flex-col items-center justify-between md:flex-row">
-          <div className="max-[630] pt-20">
-            <h2 className="py-4 text-lg font-bold text-[#DF6951] uppercase md:text-base xl:text-xl">
+          <div className="w-[650px] max-[630px]:pt-20">
+            <h2 className="w-fit py-4 text-lg font-bold text-[#DF6951] uppercase md:text-base xl:text-xl">
               Best Destination in the world
             </h2>
-            <h1 className="max-w-[80%] text-[40px] leading-9 font-extrabold lg:text-[55px] lg:leading-14 xl:text-[86px] xl:leading-24">
+            <h1 className="max-w-full text-[40px] leading-9 font-extrabold lg:text-[50px] lg:leading-14 xl:text-[86px] xl:leading-24">
               Travel, enjoy and live a new and full life
             </h1>
             <p className="max-w-[477px] py-6 text-[17px] leading-8">
@@ -47,7 +47,7 @@ function HomePage() {
               west hard for the.
             </p>
 
-            <div className="flex gap-7 py-4 lg:gap-14">
+            <div className="flex w-fit gap-7 py-4 lg:gap-14">
               <button className="h-fit rounded-xl bg-yellow-500 px-3 py-2 text-base text-white xl:px-6 xl:py-4 xl:text-lg">
                 Find Out More
               </button>
@@ -69,7 +69,7 @@ function HomePage() {
               <img src={planeImage} alt="" />
             </div>
             <img
-              className="h-[530px] w-full object-contain lg:h-full"
+              className="object-to p h-[500px] object-cover lg:h-[600px] xl:h-[765px]"
               src={heroImage}
               alt=""
             />
@@ -139,65 +139,69 @@ function HomePage() {
           <h3 className="text-xl text-gray-600">Top Selling</h3>
           <h2 className="text-6xl font-bold">Top Destination</h2>
         </div>
-        <div className="relative z-10 mt-25 flex max-w-[1200px] flex-wrap justify-evenly gap-6">
-          <img
-            className="absolute right-[8%] bottom-10 -z-10 min-[1118px]:-right-6 sm:right-[17%] md:max-[880px]:right-[26%]"
-            src={decoreImage3}
-            alt=""
-          />
+
+        <div className="relative z-10 mx-auto mt-25 flex max-w-[1200px] flex-wrap justify-evenly gap-6 px-4">
+          {/* Card 1 */}
           <div className="h-[460px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
-            <div>
-              <img
-                src={destinationImage1}
-                className="h-[330px] w-full object-cover object-top"
-              />
-            </div>
-            <div className="space-y-3 p-6">
-              <div className="flex justify-between text-lg text-gray-500">
-                <span>Rome, Italty</span>
-                <span>$5,42k</span>
+            <img
+              src={destinationImage1}
+              className="h-[330px] w-full object-cover object-top"
+            />
+            <div className="space-y-3 p-6 text-gray-500">
+              <div className="flex justify-between text-lg">
+                <span>Rome, Italy</span>
+                <span>$5.42k</span>
               </div>
-              <div className="flex items-center gap-4 text-lg text-gray-500">
+              <div className="flex items-center gap-4 text-lg">
                 <img src={navigationImage} alt="" />
                 <span>10 Days Trip</span>
               </div>
             </div>
           </div>
+
+          {/* Card 2 */}
           <div className="h-[460px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
-            <div>
-              <img
-                src={destinationImage2}
-                className="h-[330px] w-full object-cover object-top"
-              />
-            </div>
-            <div className="space-y-3 p-6">
-              <div className="flex justify-between text-lg text-gray-500">
+            <img
+              src={destinationImage2}
+              className="h-[330px] w-full object-cover object-top"
+            />
+            <div className="space-y-3 p-6 text-gray-500">
+              <div className="flex justify-between text-lg">
                 <span>London, UK</span>
                 <span>$4.2k</span>
               </div>
-              <div className="flex items-center gap-4 text-lg text-gray-500">
+              <div className="flex items-center gap-4 text-lg">
                 <img src={navigationImage} alt="" />
                 <span>12 Days Trip</span>
               </div>
             </div>
           </div>
-          <div className="h-[460px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
-            <div>
+
+          {/* Card 3 — includes the absolute image */}
+          <div className="relative w-fit">
+            <div className="h-[460px] w-[330px] overflow-hidden rounded-3xl bg-white shadow-2xl">
               <img
                 src={destinationImage3}
                 className="h-[330px] w-full object-cover object-top"
               />
-            </div>
-            <div className="space-y-3 p-6">
-              <div className="flex justify-between text-lg text-gray-500">
-                <span>Full Europe</span>
-                <span>$155k</span>
+              <div className="space-y-3 p-6 text-gray-500">
+                <div className="flex justify-between text-lg">
+                  <span>Full Europe</span>
+                  <span>$155k</span>
+                </div>
+                <div className="flex items-center gap-4 text-lg">
+                  <img src={navigationImage} alt="" />
+                  <span>28 Days Trip</span>
+                </div>
               </div>
-              <div className="flex items-center gap-4 text-lg text-gray-500">
-                <img src={navigationImage} alt="" />
-                <span>28 Days Trip</span>
-              </div>
+
+              {/* Image absolutely positioned inside last card */}
             </div>
+            <img
+              className="absolute -right-13 bottom-6 -z-10"
+              src={decoreImage3}
+              alt=""
+            />
           </div>
         </div>
       </section>
